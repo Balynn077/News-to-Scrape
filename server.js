@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 app.use(routes);
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://heroku_7w0wpf68:mpamde4bkka7of440cjp56vn4c@ds111336.mlab.com:11336/heroku_7w0wpf68";
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, {
